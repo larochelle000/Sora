@@ -27,3 +27,135 @@
   height: 100px;
   float: left;
 }
+
+/*#region Main content*/
+
+/*#region Home*/
+
+/*#region Carousel*/
+#home .carousel {
+    position: relative;
+    height: 350px;
+    width: 100%;
+}
+
+#home .carousel img {
+  height: 350px;
+  width: 100%;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+#home .carousel .carousel-caption {
+  position: absolute;
+  top: 50%;
+  z-index: 3;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 36px;
+  font-weight: bold;
+}
+
+#home .carousel .carousel-indicators > li {
+    margin: 0 2px;
+    background-color: white;
+    border-color: white;
+    opacity: .7;
+}
+
+#home .carousel .carousel-indicators > li.active {
+  width: 10px;
+  height: 10px;
+  opacity: 1;
+}
+/*#endregion Carousel */
+
+/*#region Restaurant presentatiton*/
+
+#restaurant-description {
+    margin-top: 20px;
+}
+
+#restaurant-description a:hover, #restaurant-descriptiona:focus{
+    outline: none;
+    text-decoration: none;
+}
+#restaurant-description .tab .nav-tabs{
+    border: none;
+}
+
+#restaurant-description .tab .nav-tabs li{
+    margin: 0;
+}
+
+#restaurant-description .tab .nav-tabs > li {
+    float:none;
+    display:inline-block;
+    zoom:1;
+}
+
+#restaurant-description .tab .nav-tabs {
+    text-align:center;
+}
+#restaurant-description .tab .nav-tabs li a{
+    font-size: 14px;
+    color: #999898;
+    background: #fff;
+    margin: 0;
+    padding: 20px 25px;
+    border-radius: 0;
+    border: none;
+    text-transform: uppercase;
+    position: relative;
+}
+#restaurant-description .tab .nav-tabs li a:hover{
+    border-top: none;
+    border-bottom: none;
+    border-right-color: #ddd;
+}
+#restaurant-description .tab .nav-tabs li.active a,
+#restaurant-description .tab .nav-tabs li.active a:hover{
+    color: #000;
+    border: none;
+    background: none;
+    font-weight: bold;
+    font-size: 18px;
+}
+#restaurant-description .tab .nav-tabs li.active a:before{
+    content: "";
+    width: 58%;
+    height: 4px;
+    background: #000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+#restaurant-description .tab .nav-tabs li.active a:after{
+    content: "";
+    border-bottom: 15px solid #000;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    position: absolute;
+    bottom: -15px;
+    left: 38%;
+}
+#restaurant-description .tab .tab-content{
+    font-size: 13px;
+    color: #fff;
+    line-height: 25px;
+    background: #000;
+    padding: 20px;
+    margin: 15px;
+    border: 1px solid #000;
+    border-top: none;
+    text-align: center;
+}
+/*#endregion Restaurant presentation*/
+
+/*#endregion Home*/
+
+/*#endregion Main content*/
